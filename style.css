@@ -1,12 +1,14 @@
-#about,#contact{
-  display: none ; 
-  max-height: 0; 
-  overflow: hidden; 
-  transition: max-height 0.3s ease;
+#about,
+#contact {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 }
 
-#about.aboutActive,
-        #contact.contactActive {
-            display: block;
-            max-height: 1000px; /* Set to a large enough value to accommodate content */
-        }
+/* CSS for dropdown menu */
+.aboutActive,
+.contactActive {
+    display: block;
+    max-height: 1000px; /* Set to a large enough value to accommodate content */
+}
