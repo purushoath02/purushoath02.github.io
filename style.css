@@ -29,7 +29,7 @@ header {
 }
 
 nav a {
-  color: green;
+  color: rgb(231, 231, 231);
   text-decoration: none;
   font-size: 24px;
   margin: 10px;
@@ -37,7 +37,7 @@ nav a {
 
 .matrix-text {
   font-family: monospace;
-  color: limegreen;
+  color: rgb(255, 255, 255);
   font-size: 24px;
   animation: matrix-animation 10s infinite;
 }
