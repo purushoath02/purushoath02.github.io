@@ -12,3 +12,41 @@
     display: block;
     max-height: 1000px; /* Set to a large enough value to accommodate content */
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+nav a {
+  color: green;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.matrix-text {
+  font-family: monospace;
+  color: limegreen;
+  font-size: 24px;
+  animation: matrix-animation 10s infinite;
+}
+
+@keyframes matrix-animation {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
