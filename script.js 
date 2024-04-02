@@ -1,0 +1,8 @@
+funtion toggleAContact(){
+    var contactSection = document.getElementById('contact'); 
+    contactSection.classList.toggle('contactActive');
+}
+funtion  toggleAbout(){ 
+    var aboutSection = document.getElementById('about'); 
+    aboutSection.classList.toggle('aboutActive');
+}
