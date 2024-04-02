@@ -7,8 +7,8 @@
 }
 
 /* CSS for dropdown menu */
-.aboutActive,
-.contactActive {
+
+#contact.contactActive{
     display: block;
     max-height: 1000px; /* Set to a large enough value to accommodate content */
 }
