@@ -3,35 +3,40 @@ body {
     background-color: #131417; /* Dark gray     font-family:'Roboto'
     color: #f2f2f2; /* Light gray text */
 }
-
-.container,#nav {
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+.container{
     text-align: center;
     padding: 20px;
 }
-
 .container h3 {
     display: inline-block;
     margin: 0 10px;
     color: #f2f2f2; 
     cursor: pointer;
 }
-
+#nav {
+  transition: all 0.5s ease; /* Smooth transition for all properties */
+}
+#nav h3{
+    display: inline-block;
+    margin: 0 10px;
+    color: #f2f2f2; 
+    cursor: pointer;
+    height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
 #nav h3:hover {
     color: #f96d00; 
 }
 
-section {
-   
-    padding: 20px;
-    margin: 20px 0;
-}
-
-footer {
-    background-color: #393e46; /* Dark gray footer */
-    padding: 10px;
-    text-align: center;
-    color: #aaa; /* Light gray for footer text */
-}
 
 #about,
 #contact{
@@ -48,11 +53,10 @@ footer {
     color: white
 }
 
-
 .container > p {
   text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
 }
-.container,#nav {
+.container{
   color: #e5e5e5;
   font-size: 2.26rem;
   text-transform: uppercase;
@@ -80,13 +84,13 @@ footer {
 }
 
 .first div {
-  background-color:#20a7d8;
+  background-color:#f96d00; ;
 }
 .second div {
-  background-color:#CD921E;
+  background-color:#222831;
 }
 .third div {
-  background-color:#c10528;
+  background-color:#f96d00;
 }
 
 @keyframes text-animation {
@@ -101,9 +105,33 @@ footer {
   90% {margin-top: 0;}
   100% {margin-top: 0;}
 }
-.navbar{
+#nav.hidden{
   display:none;
+}
+#nav.show
+{
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav.active{
+   /* Fixed position */
+  top: 0; /* Align to the top of the viewport */
+  width: 100%;
+  padding: 10px 20px; 
 }
 #animation.Hidden{
   display:none;
+}
+
+
+footer {
+    background-color: #393e46; /* Dark gray footer */
+    padding: 10px;
+    text-align: center;
+    color: #aaa; /* Light gray for footer text */
 }
