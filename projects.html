@@ -1,45 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="projects.css">
-</head>
-<body>
-    <div class="container">
-        <h1>My Projects</h1>
-        <div class="project">
-            <h2>Stock analyser</h2>
-            <p>Developed a stock analysis tool in python which uses ICICI breeze API for fetching the real time data from NSE</p>
-            <p><strong>Skills:</strong> Python</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project">
-            <h2>Video Subtitle Genrator</h2>
-            <p>I created a web application to generate subtitles by uploading media in the form of videos. I implmented this with the help of Flask web development framework in Python along with UI integration </p>
-            <p><strong>Skills:</strong> Python, Flask</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project">
-            <h2>Hand Sign Recognition</h2>
-            <p>Created a deep learning model which can detect and translate ASL alphabets.</p>
-            <p><strong>Skills:</strong> Python, Deeplearning</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project">
-            <h2>Curiosity Rover Image fetcher</h2>
-            <p>I created a python program with the help of NASA API, which can fetch images from the NASA curiosity rover based on a given date</p>
-            <p><strong>Skills:</strong> Python</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project">
-            <h2>Online Shopping System</h2>
-            <p>ICreated an Online shopping System</p>
-            <p><strong>Skills:</strong> Java, SQL, HTML, JS, CSS</p>
-            <a href="#">View Project</a>
-        </div>
-        <!-- Add more projects as needed -->
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home - My Portfolio</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>My Projects</h1>
+            <section class="card project">
+                <a href="https://github.com/purushoath02/ReactNewsWebApp">
+                    <h2>News Aggregator</h2>
+                </a>
+                <ul>
+                    <li>
+                        Developed a responsive React application for real-time
+                        news aggregation.
+                    </li>
+                    <li>
+                        Integrated with News API to fetch and display current
+                        news articles.
+                    </li>
+                    <li>
+                        Implemented search functionality and category filtering
+                        for enhanced user experience.
+                    </li>
+                    <li>
+                        Utilized React Hooks for state management and Axios for
+                        API requests.
+                    </li>
+                </ul>
+            </section>
+            <section class="card project">
+                <a href="https://github.com/purushoath02/TaskListApp">
+                    <h2>Task Manager App, Full Stack Project</h2>
+                </a>
+                <ul>
+                    <li>
+                        Developed a full-stack task management application using
+                        Django REST Framework and React.
+                    </li>
+                    <li>Implemented RESTful API.</li>
+                    <li>
+                        Created responsive React frontend with Redux for state
+                        management and Material-UI for design.
+                    </li>
+                </ul>
+            </section>
+            <section class="card project">
+                <a href="https://github.com/purushoath02/-ImageSteganography-">
+                    <h2>Image Steganographer</h2>
+                </a>
+                <ul>
+                    <li>
+                        Developed a full-stack image steganography application.
+                    </li>
+                    <li>Implemented image encoding and decoding algorithms.</li>
+                    <li>
+                        Created a user-friendly interface with React and styled
+                        it with Material-UI.
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- <footer>
+            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        </footer> -->
+    </body>
 </html>
