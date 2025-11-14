@@ -1,125 +1,110 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home - My Portfolio</title>
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <!-- <li>
-                        <a
-                            href="https://twitter.com/yourprofile"
-                            target="_blank"
-                            class="social-link"
-                        >
-                            <img src="path/to/twitter-icon.png" alt="Twitter" />
-                        </a>
-                    </li>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Purushoath</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-                    <li>
-                        <a
-                            href="https://linkedin.com/in/yourprofile"
-                            target="_blank"
-                            class="social-link"
-                        >
-                            <img
-                                src="path/to/linkedin-icon.png"
-                                alt="LinkedIn"
-                            />
-                        </a>
-                    </li> -->
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h1>My Projects</h1>
-            <section class="card project">
-                <a href="https://github.com/purushoath02/Transfer">
-                <h2>CLI Tool for File Transfer</h2>
-                </a>
-                <p>
-                    Developed a command-line interface (CLI) tool for transferring files over a TCP connection in Rust.
-                    The tool is able to handle multiple concurrent file transfers with the help of 
-                    the asynchronous runtime library Tokio and multithreading.
-                </p>
-                <h3>Key Features:</h3>
-                <ul>
-                    <li>File Sending</li>
-                    <li>File Receiving</li>
-                    <li>Command-Line Interface</li>
-                    <li>Asynchronous Networking</li>
-                </ul>
-                <h3>Technologies Used:</h3>
-                <ul>
-                    <li>Rust</li>
-                    <li>Tokio</li>
-                    <li>Clap</li>
-                </ul>
-            </section>
-            <section class="card project">
-                <a href="https://github.com/purushoath02/ReactNewsWebApp">
-                    <h2>News Aggregator</h2>
-                </a>
-                <ul>
-                    <li>
-                        Developed a responsive React application for real-time
-                        news aggregation.
-                    </li>
-                    <li>
-                        Integrated with News API to fetch and display current
-                        news articles.
-                    </li>
-                    <li>
-                        Implemented search functionality and category filtering
-                        for enhanced user experience.
-                    </li>
-                    <li>
-                        Utilized React Hooks for state management and Axios for
-                        API requests.
-                    </li>
-                </ul>
-            </section>
-            <section class="card project">
-                <a href="https://github.com/purushoath02/TaskListApp">
-                    <h2>Task Manager App, Full Stack Project</h2>
-                </a>
-                <ul>
-                    <li>
-                        Developed a full-stack task management application using
-                        Django REST Framework and React.
-                    </li>
-                    <li>Implemented RESTful API.</li>
-                    <li>
-                        Created responsive React frontend with Redux for state
-                        management and Material-UI for design.
-                    </li>
-                </ul>
-            </section>
-            <section class="card project">
-                <a href="https://github.com/purushoath02/-ImageSteganography-">
-                    <h2>Image Steganographer</h2>
-                </a>
-                <ul>
-                    <li>
-                        Developed a full-stack image steganography application.
-                    </li>
-                    <li>Implemented image encoding and decoding algorithms.</li>
-                    <li>
-                        Created a user-friendly interface with React and styled
-                        it with Material-UI.
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <!-- <footer>
-            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-        </footer> -->
-    </body>
+<body>
+<header>
+    <nav class="navbar">
+        
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Projects</h1>
+
+    <!-- ALBERTA -->
+    <section class="card project">
+        <a href="https://www.kaggle.com/code/gpurushoath/alberta">
+            <h2>ALBERTA: Fault-Tolerant Transformer (2025)</h2>
+        </a>
+        <p>
+            Implemented ALBERTA framework for detecting arithmetic faults in Transformer GEMM operations.
+            Performed layer-wise vulnerability analysis and integrated checksum-based detection.
+        </p>
+    </section>
+
+    <!-- NFV Router -->
+    <section class="card project">
+        <a href="https://github.com/purushoath02/NFVRouter">
+            <h2>NFV Router (2025–Present)</h2>
+        </a>
+        <p>
+            Built a prototype NFV router using Linux raw sockets and BPF.
+            Includes routing table logic, interface handling, and modular packet pipelines.
+        </p>
+    </section>
+
+    <!-- Lumine -->
+    <section class="card project">
+        <a href="https://github.com/kingjuno/lumine">
+            <h2>Lumine: Tensor Library (2024)</h2>
+        </a>
+        <p>
+            A C++ tensor library with Python bindings, supporting slicing, indexing, and fast arithmetic through stride-based layout.
+        </p>
+    </section>
+
+    <!-- Rust File Transfer CLI -->
+    <section class="card project">
+        <a href="https://github.com/purushoath02/Transfer">
+            <h2>Rust File Transfer CLI</h2>
+        </a>
+        <p>
+            Asynchronous TCP file transfer tool with Tokio runtime.
+            Supports parallel transfers, chunked streaming, and a command-line interface via Clap.
+        </p>
+    </section>
+
+    <!-- News Aggregator -->
+    <section class="card project">
+        <a href="https://github.com/purushoath02/ReactNewsWebApp">
+            <h2>News Aggregator</h2>
+        </a>
+        <p>React app with NewsAPI integration supporting live updates and category filtering.</p>
+    </section>
+
+    <!-- Task Manager -->
+    <section class="card project">
+        <a href="https://github.com/purushoath02/TaskListApp">
+            <h2>Task Manager App</h2>
+        </a>
+        <p>Django REST + React + Redux full-stack task management system.</p>
+    </section>
+
+    <!-- FAQ Chatbot -->
+    <section class="card project">
+        <a href="https://github.com/purushoath02/FaqChatBot">
+            <h2>FAQ Chatbot</h2>
+        </a>
+        <p>RASA-based chatbot with Flask backend for intelligent FAQ automation.</p>
+    </section>
+
+    <!-- Subtitle Generator -->
+    <section class="card project">
+        <a href="https://github.com/purushoath02/AudioToText">
+            <h2>Video Subtitle Generator</h2>
+        </a>
+        <p>Speech-to-text subtitle generator using Flask and audio processing pipelines.</p>
+    </section>
+</main>
+<footer class="footer">
+    <p>
+        Contact:
+        <a href="mailto:purushoath2002@gmail.com">Email</a> • 
+        <a href="https://linkedin.com/in/purushoath-ganapathy-380408213" target="_blank">LinkedIn</a>
+    </p>
+</footer>
+</body>
 </html>
